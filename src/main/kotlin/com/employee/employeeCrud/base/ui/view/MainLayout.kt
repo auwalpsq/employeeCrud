@@ -64,7 +64,7 @@ class MainLayout internal constructor(private val authenticationContext: Authent
 
     private fun createUserMenu(): Component {
         // TODO Replace with real user information and actions
-        val avatar = Avatar("John Smith")
+        val avatar = Avatar("Auwal Auwal")
         avatar.addThemeVariants(AvatarVariant.LUMO_XSMALL)
         avatar.addClassNames(Margin.Right.SMALL)
         avatar.colorIndex = 5
@@ -74,7 +74,7 @@ class MainLayout internal constructor(private val authenticationContext: Authent
         userMenu.addClassNames(Margin.MEDIUM)
 
         val userMenuItem = userMenu.addItem(avatar)
-        userMenuItem.add("John Smith")
+        userMenuItem.add("Auwal Usman")
         userMenuItem.subMenu.addItem("View Profile")
         userMenuItem.subMenu.addItem("Manage Settings")
         userMenuItem.subMenu.addItem("Logout", {event -> authenticationContext.logout()})
